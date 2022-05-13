@@ -4,6 +4,8 @@ import android.provider.BaseColumns
 
 object MyDBNameClass1 {
 
+
+
     const val DATABASE_VERSION_1 = 3
     const val DATABASE_NAME_1 = "MyLessonDb12.db"
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="navigation_view"
+    android:id="@+id/menu0"
+
+    >
+
+    <item
+        android:id="@+id/Item01"
+        android:icon="@drawable/ic_baseline_local_fire_department_24"
+
+        android:title="@string/name_menu1" />
+    <item
+        android:id="@+id/Item02"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:title="@string/name_1" />
+    <item
+        android:id="@+id/Item03"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:title="@string/name_2" />
+    <item
+        android:id="@+id/Item04"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/name_menu2" />
+    <item
+        android:id="@+id/Item05"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="@string/name_menu3" />
+</menu>

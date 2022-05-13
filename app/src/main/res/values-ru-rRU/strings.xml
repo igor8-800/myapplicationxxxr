@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Дневник</string>
+    <string name="name_1">Дневник</string>
+    <string name="name_menu1">Быстрая заметка</string>
+    <string name="name_menu0">Домой</string>
+    <string name="name_menu2">Настройки</string>
+    <string name="name_menu3">Сообщение</string>
+    <string name="name_2">Заметки</string>
+    <string name="name_3">В процессе разработки</string>
+    <string name="poleDate">введите дату</string>
+    <string name="poleTime">введите время</string>
+    <string name="poleColor">выберите цвет</string>
+    <string name="dateDiary">Дата</string>
+    <string name="timeDiary">Время</string>
+    <string name="colorDiary">Цвет</string>
+
+    <string name="January">Январь</string>
+    <string name="February">Февраль</string>
+    <string name="March">March</string>
+    <string name="April">Март</string>
+    <string name="May">Май</string>
+    <string name="June">Июнь</string>
+    <string name="July">Июль</string>
+    <string name="August">Август</string>
+    <string name="September">Сентябрь</string>
+    <string name="October">Октябрь</string>
+    <string name="November">Ноябрь</string>
+    <string name="December">Декабрь</string>
+    <string name="noni">Нет никаких записей</string>
+
+    <string name="feeling">Как ты себя чувствуешь?</string>
+
+    <string name="item0">Обычным</string>
+    <string name="item1">Ярким</string>
+    <string name="item2">Спокойный</string>
+    <string name="item3">Злобный</string>
+    <string name="item4">Напуганный</string>
+    <string name="item5">Нежный</string>
+    <string name="item6">Восторженный</string>
+    <string name="item7">Счастливый</string>
+    <string name="item8">Искренний</string>
+    <string name="item9">Уверенный</string>
+    <string name="item10">Озабоченный</string>
+    <string name="item11">Безразличный</string>
+
+    <string name="error01">Заполните поля!</string>
+
+    <string name="home">Домой</string>
+
+    <string name="low">низкий</string>
+    <string name="medium">средний</string>
+    <string name="high">высокий</string>
+
+    <string name="settings">Настройки</string>
+    <string name="themes">Выбор тем</string>
+    <string name="text">Текст</string>
+    <string name="applications">Приложения</string>
+
+    <string name="themes_1">Выберите тему приложения</string>
+    <string name="text_1">Выберите размер текста</string>
+    <string name="text_2">Измените цвет текста</string>
+    <string name="text_3">Измените цвет заголовка</string>
+    <string name="text_4">Изменить цвет даты</string>
+
+    <string name="applications_1">Цвет кнопок, меню</string>
+    <string name="applications_2">Цвет фона</string>
+    <string name="applications_3">Цвет заметок</string>
+
+    <string name="settingSize_1">Настройки текста</string>
+    <string name="settingSize_2">8 Августа</string>
+    <string name="settingSize_3">Кино</string>
+    <string name="settingSize_4">9:23</string>
+    <string name="settingSize_5">Размер текста</string>
+    <string name="settingSize_6">еще меньше</string>
+    <string name="settingSize_7">маленький</string>
+    <string name="settingSize_8">стандартный</string>
+    <string name="settingSize_9">большой</string>
+    <string name="settingSize_10">даже больше</string>
+
+    <string name="settingColor_1">Цвет текста</string>
+    <string name="settingColor_2">Цветовая палитра</string>
+
+    <string name="FastТote">Быстрая заметка</string>
+
+
+    <string name="delete">Вы уверены, что хотите удалить запись?</string>
+    <string name="deleteCancellation">отменить</string>
+    <string name="deleteYes">удалить</string>
+
+
+    <string name="send">посылать</string>
+    <string name="messageTitle">Заголовок сообщения</string>
+    <string name="textMessages">Текстовые сообщения</string>
+    <string name="YourEmailAddress">Ваш адрес электронной почты</string>
+
+    <string name="Title">Заголовок</string>
+    <string name="Text">Текст</string>
+    <string name="Mail">Электронная почта</string>
+
+    <string name="other">другой</string>
+    <string name="Diskription">Описание</string>
+
+
+    <string name="infoProtect">При изменении более подробных настроек приоритет тем, уменьшается!</string>
+    <string name="infoProtect1">Рекомендуется стандартный размер шрифта</string>
+    <string name="infoProtect2">Оставьте отзыв о приложении, чтобы сделать его еще лучше!</string>
+
+    <string name="vipStatus_1">VIP-статус</string>
+    <string name="vipStatus_2">VIP-статус включает в себя</string>
+    <string name="vipStatus_3">Возможность делать быстрые заметки</string>
+    <string name="vipStatus_4">Множество уникальных и разнообразных тем</string>
+    <string name="vipStatus_5">Изменение дизайна приложения в соответствии с вашим вкусом</string>
+    <string name="vipStatus_6">Будущие обновления, связанные с приложением</string>
+    <string name="vipStatus_7">Купить</string>
+    <string name="vipStatus_8">Отмена</string>
+    <string name="vipStatus_9">Чтобы открыть нужную функцию, вам необходимо приобрести VIP-статус.</string>
+
+
+    <string name="vipERRORE">Временно не работает</string>
+
+</resources>

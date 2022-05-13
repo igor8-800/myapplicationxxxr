@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".diary.MainActivity_diary">
+
+    <LinearLayout
+        android:id="@+id/bot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/corpus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/link_diary"
+            android:orientation="vertical"
+            app:cornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                app:cornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/buttonIar"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_weight="1.1"
+                    android:background="#006C2E2E"
+                    android:checkable="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    app:cornerRadius="10dp" />
+
+                <TextView
+                    android:id="@+id/textViewIarTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

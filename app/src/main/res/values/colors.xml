@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#727575</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="vist">#6C8BFF</color>
+    <color name="diary_1">#E6CC24</color>
+    <color name="diary_2">#47FF75</color>
+    <color name="diary_3">#496EFA</color>
+    <color name="diary_4">#EC5353</color>
+    <color name="funGlav">#F0C5CCCB</color>
+    <color name="funbutton_1">#D0555555</color>
+
+    <color name="item0">#9E9595</color>
+    <color name="item1">#B5AC5B</color>
+    <color name="item2">#89D46B</color>
+    <color name="item3">#2F322E</color>
+    <color name="item4">#476A39</color>
+    <color name="item5">#D37BD3</color>
+    <color name="item6">#D56C6D</color>
+    <color name="item7">#E39867</color>
+    <color name="item8">#99E3E3</color>
+    <color name="item9">#7A8AF3</color>
+    <color name="item10">#F0B5F1</color>
+    <color name="item11">#EAB599</color>
+    <color name="round_corner">#993302</color>
+
+    <color name="menuvidjet">#9C9C9C</color>
+
+
+    <color name="iconFire">#FFFFFF</color>
+
+    <color name="rang1">#72AA4B</color>
+    <color name="rang2">#D1A143</color>
+    <color name="rang3">#C83F4B</color>
+
+    <color name="settingcolorItem">#1BFFFFFF</color>
+    <color name="settingcolorItem2">#0C000000</color>
+
+
+<!--  fone_1-->
+    <color name="menuTop_0">#CF6464</color>
+    <color name="icon_button">#403D3D</color>
+
+
+    <!-- sitting-->
+    <color name="sitting0">#9E9595</color>
+    <color name="sitting1">#B5AC5B</color>
+    <color name="sitting2">#57636D</color>
+    <color name="sitting3">#D09D5D</color>
+    <color name="sitting4">#965250</color>
+    <color name="sitting5">#007785</color>
+    <color name="sitting6">#31324B</color>
+    <color name="sitting7">#F5926B</color>
+    <color name="sitting8">#CF86A4</color>
+    <color name="sitting9">#9264AD</color>
+    <color name="sitting10">#FFB273</color>
+    <color name="sitting11">#3F4F49</color>
+    <color name="sitting12">#C14F8A</color>
+    <color name="sitting13">#EB6D71</color>
+    <color name="sitting14">#FFD5CA</color>
+    <color name="sitting15">#E7EFF1</color>
+
+    <color name="sitting16">#FB7203</color>
+    <color name="sitting17">#F73B00</color>
+    <color name="sitting18">#FCFB08</color>
+    <color name="sitting19">#FBA901</color>
+    <color name="sitting20">#70E22C</color>
+    <color name="sitting21">#0160A8</color>
+    <color name="sitting22">#024ADA</color>
+    <color name="sitting23">#081D61</color>
+    <color name="sitting24">#F9062C</color>
+    <color name="sitting25">#6A2147</color>
+
+    <color name="sitting26">#FEB901</color>
+    <color name="sitting27">#E54954</color>
+    <color name="sitting28">#0179D8</color>
+    <color name="sitting29">#0199BE</color>
+    <color name="sitting30">#7A7672</color>
+    <color name="sitting31">#767676</color>
+    <color name="sitting32">#E81121</color>
+    <color name="sitting33">#E9005C</color>
+    <color name="sitting34">#8E8CD7</color>
+    <color name="sitting35">#C339B3</color>
+    <color name="sitting36">#827443</color>
+    <color name="sitting37">#00B293</color>
+    <color name="sitting38">#891798</color>
+    <color name="sitting39">#F7630B</color>
+    <color name="sitting40">#2C7D9A</color>
+    <color name="sitting41">#5A5B56</color>
+    <color name="sitting42">#4B4A47</color>
+    <color name="sitting43">#67797E</color>
+    <color name="sitting44">#00CB6A</color>
+    <color name="sitting45">#EF694E</color>
+    <color name="sitting46">#478204</color>
+
+
+    <!--  тема_1-->
+
+    <!--  меню верх-->
+    <color name="themes_101">#212121</color>
+
+    <!-- фон приложения-->
+    <color name="themes_102">#000000</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_103">#535353</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_104">#424242</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_105">#303030</color>
+
+    <!-- цвет текста-->
+    <color name="themes_106">#ffffff</color>
+
+    <!-- затемнение-->
+    <color name="themes_108">#1BFFFFFF</color>
+
+
+    <!--  тема_2-->
+
+    <!--  меню верх-->
+    <color name="themes_201">#47A3FF</color>
+
+    <!-- фон приложения-->
+    <color name="themes_202">#ffffff</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_203">#DFDDDD</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_204">#E6F2FF</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_205">#7DBEF8</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_206">#B1B1B1</color>
+    <!-- цвет текста 2-->
+    <color name="themes_207">#000000</color>
+
+    <!-- затемнение-->
+    <color name="themes_208">#0C000000</color>
+
+    <!--  тема_3-->
+
+    <!--  меню верх-->
+    <color name="themes_301">#F56109</color>
+
+    <!-- фон приложения-->
+    <color name="themes_302">#ffffff</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_303">#DFDDDD</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_304">#FC8B00</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_305">#FDB760</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_306">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_307">#000000</color>
+
+    <!-- затемнение-->
+    <color name="themes_308">#0C000000</color>
+
+    <!--  тема_4-->
+
+    <!--  меню верх-->
+    <color name="themes_401">#F56109</color>
+
+    <!-- фон приложения-->
+    <color name="themes_402">#000000</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_403">#424242</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_404">#FC8B00</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_405">#FDB760</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_406">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_407">#FFFFFF</color>
+
+    <!-- затемнение-->
+    <color name="themes_408">#1BFFFFFF</color>
+
+    <!--  тема_5-->
+
+    <!--  меню верх-->
+    <color name="themes_501">#7A7673</color>
+
+    <!-- фон приложения-->
+    <color name="themes_502">#000000</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_503">#424242</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_504">#7B7673</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_505">#767676</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_506">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_507">#F4F0F0</color>
+
+    <!-- затемнение-->
+    <color name="themes_508">#1BFFFFFF</color>
+
+    <!--  тема_6-->
+
+    <!--  меню верх-->
+    <color name="themes_601">#00CB6B</color>
+
+    <!-- фон приложения-->
+    <color name="themes_602">#ffffff</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_603">#DFDDDD</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_604">#0F893E</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_605">#0F893E</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_606">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_607">#000000</color>
+
+    <!-- затемнение-->
+    <color name="themes_608">#0C000000</color>
+
+    <!--  тема_7-->
+
+    <!--  меню верх-->
+    <color name="themes_701">#837544</color>
+
+    <!-- фон приложения-->
+    <color name="themes_702">#ffffff</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_703">#DFDDDD</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_704">#515F55</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_705">#7D725E</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_706">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_707">#000000</color>
+
+    <!-- затемнение-->
+    <color name="themes_708">#0C000000</color>
+
+    <!--  тема_8-->
+
+    <!--  меню верх-->
+    <color name="themes_801">#9B0088</color>
+
+    <!-- фон приложения-->
+    <color name="themes_802">#ffffff</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_803">#DFDDDD</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_804">#C339B2</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_805">#B046C0</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_806">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_807">#000000</color>
+
+    <!-- затемнение-->
+    <color name="themes_808">#0C000000</color>
+
+    <!--  тема_9-->
+
+    <!--  меню верх-->
+    <color name="themes_901">#E2008A</color>
+
+    <!-- фон приложения-->
+    <color name="themes_902">#000000</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_903">#424242</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_904">#C339B2</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_905">#BF0075</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_906">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_907">#F4F0F0</color>
+
+    <!-- затемнение-->
+    <color name="themes_908">#1BFFFFFF</color>
+
+    <!--  тема_10-->
+
+    <!--  меню верх-->
+    <color name="themes_1001">#00B294</color>
+
+    <!-- фон приложения-->
+    <color name="themes_1002">#000000</color>
+
+    <!-- фон инпутов, полей-->
+    <color name="themes_1003">#424242</color>
+
+    <!-- базовый цвет заметок пунктов-->
+    <color name="themes_1004">#577D74</color>
+
+    <!-- всплывающие окна-->
+    <color name="themes_1005">#547C73</color>
+
+    <!-- цвет текста 1-->
+    <color name="themes_1006">#B1B1B1</color>
+
+    <!-- цвет текста 2-->
+    <color name="themes_1007">#F4F0F0</color>
+
+    <!-- затемнение-->
+    <color name="themes_1008">#1BFFFFFF</color>
+
+</resources>

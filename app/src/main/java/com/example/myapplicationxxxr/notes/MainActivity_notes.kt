@@ -25,10 +25,7 @@ import com.example.myapplicationxxxr.notes.ui.MyDbManager1
 import com.example.myapplicationxxxr.setting.SharedPreference
 import com.example.myapplicationxxxr.setting.TextColor1
 import com.example.myapplicationxxxr.setting.setting
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 
 class MainActivity_notes : AppCompatActivity(){
@@ -265,6 +262,7 @@ binding.imageButtonNotesw.setOnClickListener {onCliclSive("")}
         val myText = binding.editTextTextPersonName.text.toString()
         val myLord = items
         val check = "2"
+
         CoroutineScope(Dispatchers.Main).launch {
 
             if(myText != "") {
@@ -419,11 +417,14 @@ binding.imageButtonNotesw.setOnClickListener {onCliclSive("")}
         val check = "2"
         val id = 1
         if(values != ""){
-            myDbManager1.insertToDb1(values, rang, check, id )
-            binding.fastNotesContainer.visibility = View.GONE
-            myDbManager1.closeDb()
-            binding.fastNotesValues.setText("")
-            i -= 1
+            CoroutineScope(Dispatchers.IO).launch {
+                myDbManager1.insertToDb1(values, rang, check, id)
+
+                binding.fastNotesContainer.visibility = View.GONE
+                myDbManager1.closeDb()
+                binding.fastNotesValues.setText("")
+                i -= 1
+            }
         }
     }
 

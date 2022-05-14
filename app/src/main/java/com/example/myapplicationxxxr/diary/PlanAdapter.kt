@@ -23,6 +23,9 @@ import com.example.myapplicationxxxr.diary.book.BookActivity
 import com.example.myapplicationxxxr.hemes.Themes
 import com.example.myapplicationxxxr.setting.SharedPreference
 import com.example.myapplicationxxxr.setting.TextColor1
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.security.acl.LastOwnerException
 
 class MyAdapter(listMain: ArrayList<ListItem>, contextM: Context,dbmanajer:MyDbManager): RecyclerView.Adapter<MyAdapter.MyHolder>() {
@@ -114,10 +117,13 @@ class MyAdapter(listMain: ArrayList<ListItem>, contextM: Context,dbmanajer:MyDbM
     }
     //удаление
     fun  removePlant(index:Int, dbmanajer:MyDbManager){
-        dbmanajer.removeItemFromDB(listArray[index].id.toString())
-        listArray.removeAt(index)
-        notifyItemChanged(0,listArray.size)
-        notifyItemRemoved(index)
+        CoroutineScope(Dispatchers.Main).launch{
+            dbmanajer.removeItemFromDB(listArray[index].id.toString())
+            listArray.removeAt(index)
+            notifyItemChanged(0,listArray.size)
+            notifyItemRemoved(index)
+        }
+
     }
 
 }

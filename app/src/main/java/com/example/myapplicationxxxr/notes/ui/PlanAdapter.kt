@@ -28,6 +28,9 @@ import com.example.myapplicationxxxr.diary.MyIntentConstants
 import com.example.myapplicationxxxr.hemes.Notes
 import com.example.myapplicationxxxr.setting.SharedPreference
 import com.example.myapplicationxxxr.setting.TextColor1
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.security.acl.LastOwnerException
 
 class MyAdapter1(listMain: ArrayList<ListItem1>, contextM: Context, dbmanajer: MyDbManager1): RecyclerView.Adapter<MyAdapter1.MyHolder>() {
@@ -104,14 +107,18 @@ class MyAdapter1(listMain: ArrayList<ListItem1>, contextM: Context, dbmanajer: M
 
                 when (item.check){
                     "1" -> {
-                            binding.checkBoxNotes.resources.getBoolean(R.bool.check0)
+                        binding.checkBoxNotes.resources.getBoolean(R.bool.check0)
+                        CoroutineScope(Dispatchers.Main).launch {
                         dbmanajerL.updateItem1(item.text,item.rang, "2", item.id)
                         item.check = "2"
                           }
+                    }
                     "2" -> {
                         binding.checkBoxNotes.resources.getBoolean(R.bool.check)
-                        dbmanajerL.updateItem1(item.text,item.rang, "1", item.id)
-                        item.check = "1"
+                        CoroutineScope(Dispatchers.Main).launch {
+                            dbmanajerL.updateItem1(item.text, item.rang, "1", item.id)
+                            item.check = "1"
+                        }
 
                     }
                 }
@@ -149,10 +156,13 @@ class MyAdapter1(listMain: ArrayList<ListItem1>, contextM: Context, dbmanajer: M
 
     //удаление
     fun  removePlant(index:Int, dbmanajer: MyDbManager1){
-        dbmanajer.removeItemFromDB1(listArray[index].id.toString())
-        listArray.removeAt(index)
-        notifyItemChanged(0,listArray.size)
-        notifyItemRemoved(index)
+        CoroutineScope(Dispatchers.Main).launch{
+            dbmanajer.removeItemFromDB1(listArray[index].id.toString())
+            listArray.removeAt(index)
+            notifyItemChanged(0,listArray.size)
+            notifyItemRemoved(index)
+        }
+
     }
 
 }

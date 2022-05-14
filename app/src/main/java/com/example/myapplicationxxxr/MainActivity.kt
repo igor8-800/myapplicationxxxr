@@ -25,6 +25,9 @@ import com.example.myapplicationxxxr.setting.SharedPreference
 import com.example.myapplicationxxxr.setting.TextColor1
 import com.example.myapplicationxxxr.setting.setting
 import com.google.android.material.navigation.NavigationView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class MainActivity : AppCompatActivity() {
@@ -285,11 +288,13 @@ class MainActivity : AppCompatActivity() {
         val check = "2"
         val id = 1
         if(values != "") {
-            myDbManagerNotes.insertToDb1(values, rang, check, id)
-            binding.fastNotesContainer.visibility = View.GONE
-            myDbManagerNotes.closeDb()
-            binding.fastNotesValues.setText("")
-            i -= 1
+            CoroutineScope(Dispatchers.IO).launch {
+                myDbManagerNotes.insertToDb1(values, rang, check, id)
+                binding.fastNotesContainer.visibility = View.GONE
+                myDbManagerNotes.closeDb()
+                binding.fastNotesValues.setText("")
+                i -= 1
+            }
         }
     }
 

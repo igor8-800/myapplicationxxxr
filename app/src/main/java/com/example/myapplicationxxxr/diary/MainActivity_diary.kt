@@ -56,7 +56,6 @@ var ararrayColor = listOf(
     "#EC5353",
 
 )
-
     var i = 0
     var v = 0
 
@@ -312,7 +311,6 @@ var ararrayColor = listOf(
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-//                delet(viewHolder)
 
                 popap(viewHolder)
             }
@@ -430,11 +428,14 @@ var ararrayColor = listOf(
         val check = "2"
         val id = 1
         if(values != ""){
-        myDbManagerNotes.insertToDb1(values, rang, check, id )
-        binding.fastNotesContainer.visibility = View.GONE
-        myDbManagerNotes.closeDb()
-       binding.fastNotesValues.setText("")
-        i -= 1
+
+            CoroutineScope(Dispatchers.IO).launch {
+                myDbManagerNotes.insertToDb1(values, rang, check, id)
+                binding.fastNotesContainer.visibility = View.GONE
+                myDbManagerNotes.closeDb()
+                binding.fastNotesValues.setText("")
+                i -= 1
+            }
             }
     }
 

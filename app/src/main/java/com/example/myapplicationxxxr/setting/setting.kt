@@ -20,6 +20,9 @@ import com.example.myapplicationxxxr.hemes.Themes
 import com.example.myapplicationxxxr.notes.MainActivity_notes
 import com.example.myapplicationxxxr.notes.ui.MyDbManager1
 import com.example.myapplicationxxxr.setting.sitingActivAll.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class setting : AppCompatActivity() {
     private lateinit var  binding: ActivitySettingBinding
@@ -275,11 +278,13 @@ class setting : AppCompatActivity() {
         val check = "2"
         val id = 1
         if(values != "") {
-            myDbManagerNotes.insertToDb1(values, rang, check, id)
-            binding.fastNotesContainer.visibility = View.GONE
-            myDbManagerNotes.closeDb()
-            binding.fastNotesValues.setText("")
-            i -= 1
+            CoroutineScope(Dispatchers.IO).launch {
+                myDbManagerNotes.insertToDb1(values, rang, check, id)
+                binding.fastNotesContainer.visibility = View.GONE
+                myDbManagerNotes.closeDb()
+                binding.fastNotesValues.setText("")
+                i -= 1
+            }
         }
     }
 

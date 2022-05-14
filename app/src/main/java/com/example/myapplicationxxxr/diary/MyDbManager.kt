@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.provider.BaseColumns
 import com.example.myapplicationxxxr.notes.ui.ListItem1
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 class MyDbManager (context: Context) {
@@ -17,7 +18,7 @@ class MyDbManager (context: Context) {
         db = myDbHelper.writableDatabase
     }
     // добавление
-    suspend fun insertToDb ( title: String, content: String, date: String, time: String, color: String) {
+    suspend fun insertToDb ( title: String, content: String, date: String, time: String, color: String) = withContext(Dispatchers.IO){
         val values = ContentValues().apply {
             put(MyDBNameClass.COLUMN_NAME_TITLE, title)
             put(MyDBNameClass.COLUMN_NAME_CONTENT, content)
@@ -29,7 +30,7 @@ class MyDbManager (context: Context) {
     }
 
     // обновление
-    suspend fun updateItem( title: String, content: String, id:Int, color: String)  {
+    suspend fun updateItem( title: String, content: String, id:Int, color: String) = withContext(Dispatchers.IO)  {
         val selection = BaseColumns._ID + "=$id"
         val values = ContentValues().apply {
             put(MyDBNameClass.COLUMN_NAME_TITLE, title)
@@ -40,13 +41,16 @@ class MyDbManager (context: Context) {
     }
 
     //удаление
-    fun removeItemFromDB(id:String){
+    suspend fun removeItemFromDB(id:String) = withContext(Dispatchers.IO){
         val selection = BaseColumns._ID + "=$id"
         db?.delete(MyDBNameClass.TABLE_NAME, selection, null)
+
     }
 
     // Показ данных
-    suspend fun readDbDate(searchText: String = "") : ArrayList<ListItem>  {
+
+    suspend fun readDbDate(searchText: String = "") : ArrayList<ListItem> = withContext(Dispatchers.IO) {
+
         val dateList = ArrayList<ListItem>()
         //поиск
         val selection = "${MyDBNameClass.COLUMN_NAME_TITLE} like ?"
@@ -72,7 +76,7 @@ class MyDbManager (context: Context) {
             dateList.add(item)
         }
         cursor.close()
-        return dateList
+        return@withContext dateList
     }
 
     fun  closeDb(){

@@ -19,7 +19,7 @@ class MyDbManager1 (context: Context) {
     }
 
     // дабовление
-     fun insertToDb1 ( title: String, content: String, check: String, id:Int) {
+    suspend fun insertToDb1 ( title: String, content: String, check: String, id:Int)= withContext(Dispatchers.IO)  {
         val selection = BaseColumns._ID + "=$id"
 
         val values = ContentValues().apply {
@@ -31,7 +31,7 @@ class MyDbManager1 (context: Context) {
     }
 
     // обновление
-     fun updateItem1( title: String, content: String, check: String, id:Int)  {
+    suspend fun updateItem1( title: String, content: String, check: String, id:Int) = withContext(Dispatchers.IO)  {
         val selection = BaseColumns._ID + "=$id"
         val values = ContentValues().apply {
             put(MyDBNameClass1.COLUMN_NAME_TEXT_1, title)
@@ -43,13 +43,13 @@ class MyDbManager1 (context: Context) {
     }
 
     //удаление
-    fun removeItemFromDB1(id:String){
+    suspend fun removeItemFromDB1(id:String) = withContext(Dispatchers.IO) {
         val selection = BaseColumns._ID + "=$id"
         db1?.delete(MyDBNameClass1.TABLE_NAME_1, selection, null)
     }
 
     // показ данных
-     fun readDbDate(searchText: String = "") : ArrayList<ListItem1>  {
+    suspend fun readDbDate(searchText: String = "") : ArrayList<ListItem1> = withContext(Dispatchers.IO) {
         val dateList1 = ArrayList<ListItem1>()
         //поиск
         val selection = "${MyDBNameClass1.COLUMN_NAME_TEXT_1} like ?"
@@ -71,7 +71,7 @@ class MyDbManager1 (context: Context) {
             dateList1.add(item)
         }
         cursor.close()
-        return dateList1
+        return@withContext dateList1
     }
 
     fun  closeDb(){
